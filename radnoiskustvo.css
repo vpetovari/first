@@ -1,0 +1,674 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	background-color: brown;
+	color: wheat;
+font-family: arial, helvetica,sans-serif;
+font-size: 16px;
+font-weight: normal;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    font-family: "Rampart One";
+    text-shadow: 5px 5px 10px gold;
+
+}
+
+.box1 {
+    border: 10px solid black;
+    background-color: aqua;
+    margin: 10px;
+    margin-bottom: -80px;
+}
+.container {
+        max-width: 1440px;
+        margin: 100px auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;}
+
+.item1,.item3,.item4 {
+background-color: aqua;
+color: black;
+border: solid 5px;
+text-align: center;
+}
+.item2 {
+    background-color: white;
+    color: black;
+    border: solid 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.item5 {
+
+    font-size: 24px;
+    background-color: #001526;
+    color: white;
+    border: solid 5px;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+
+.item6 {
+
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    border: solid 5px;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+	
+	
+	.item8 {
+
+    font-size: 24px;
+    background-color: #001830;
+    color: white;
+    border: solid 5px;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+	
+	
+.item9 {
+
+    font-size: 24px;
+    background-color: #001526;
+    color: white;
+
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+
+	.item10 {
+
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+	
+	.item11 {
+
+    font-size: 24px;
+    background-color: #E30614;
+    color: black;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+	
+		.item12 {
+
+    font-size: 24px;
+    background-color: #FFFCE9;
+    color: black;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+	
+		
+		.item13 {
+
+    font-size: 24px;
+    background-color: #FF7F26;
+    color: black;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+	
+			.item14 {
+
+    font-size: 24px;
+    background-color: #E30614;
+    color: black;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+	
+				.item15 {
+
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    text-align: center;}
+	
+	
+/*
+
+
+    .btn{
+        padding: #00152610px 60px;
+        border: 0;
+        outline: none;
+        cursor:pointer;
+        font-size: 22px;
+        font-weight: 500;
+        background:darkgray;
+        border-radius: 10px;
+
+    }
+
+    .btm{
+        padding: 10px 60px;
+        border: 0;
+        outline: none;
+        cursor:pointer;
+        font-size: 22px;
+        font-weight: 500;
+        background:lightgray;
+        border-radius: 10px;
+
+    }
+    .btk{
+        padding: 10px 60px;
+        border: 0;
+        outline: none;
+        cursor:pointer;
+        font-size: 22px;
+        font-weight: 500;
+        background:darkgray;
+        border-radius: 10px;
+    }
+    */
+
+    .btk, .btn, .btm, .bbb, .bkk, .bkb, .bll, .kkk, .khh, .ggg, .hzi {
+        font-size: 22px;
+    }
+    .popup{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    .popup1{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    .popup2{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    .popup3{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+
+    .popup4{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    
+    .popup5{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    .popup6{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    .popup7{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    .popup8{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    .popup9{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    .popup10{
+        width: 400px;
+        background: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transform: translate (-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: black;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s ;
+    }
+    .open-popup{
+        visibility: visible;
+        top: 50%;
+        transform: translate (-50%, -50%) scale(1);
+		   
+    }
+
+    .open-popup1{
+        visibility: visible;
+        top: 80%;
+        transform: translate (-50%, -50%) scale(1);
+    }
+
+    .open-popup2{
+        visibility: visible;
+        top: 100%;
+        transform: translate (-50%, -50%) scale(1);
+    }
+
+    .open-popup3{
+        visibility: visible;
+        top: 130%;
+        transform: translate (-50%, -50%) scale(1);
+    }
+    .open-popup4{
+        visibility: visible;
+        top: 150%;
+        transform: translate (-50%, -50%) scale(1);
+    }
+    .open-popup5{
+        visibility: visible;
+        top: 170%;
+        transform: translate (-50%, -50%) scale(1);
+
+    }
+    .open-popup6{
+        visibility: visible;
+        top: 200%;
+        transform: translate (-50%, -50%) scale(1);
+    }
+    .open-popup7{
+        visibility: visible;
+        top: 230%;
+        transform: translate (-50%, -50%) scale(1);
+    }
+    .open-popup8{
+        visibility: visible;
+        top: 250%;
+        transform: translate (-50%, -50%) scale(1);
+    }
+    .open-popup9{
+        visibility: visible;
+        top: 280%;
+        transform: translate (-50%, -50%) scale(1);
+    }
+    .open-popup10{
+        visibility: visible;
+        top: 300%;
+        transform: translate (-50%, -50%) scale(1);
+    }
+.popup img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+
+.popup1 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+
+.popup2 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+.popup3 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+.popup4 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+.popup5 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+.popup6 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+.popup7 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+.popup8 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+.popup9 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+.popup10 img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0,2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup1 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup2 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup3 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup4 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup5 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup6 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup7 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup8 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup9 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup10 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+
+}
+.popup1 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+.popup2 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+.popup3 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+.popup4 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+
+.popup5 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+.popup6 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+.popup7 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+.popup8 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+.popup9 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+.popup10 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: yellow ;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,2);
+}
+</body>
